@@ -100,7 +100,27 @@ button,
   padding: 0;
   background: transparent;
 }
-
+.shella-btn{
+  -webkit-box-shadow: 0px 8px 15px rgba(0,0,0,0);
+  box-shadow: 0px 8px 15px rgba(0,0,0,0);
+  background-color: #242424;
+  color: #ffffff !important;
+  width: 175px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.shella-btn_fullwidth{
+  width: 100%;
+}
+.shella-btn:hover {
+  background-color: #e75480;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -317,7 +337,7 @@ button,
 }
 .header-right_area.header-right_area-2>ul>li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .header-right_area.header-right_area-2>ul>li.mobile-menu_wrap>a>i {
     vertical-align: text-bottom;
@@ -332,8 +352,8 @@ button,
     padding: 0;
 }
 .header-right_area.header-right_area-2>ul>li.minicart-wrap>a>.minicart-count_area>span.item-count {
-    top: -15px;
-    left: -18px;
+    top: -10px;
+    left: -15px;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -349,4 +369,123 @@ button,
 }
 .header-right_area.header-right_area-2>ul>li>a>i {
     font-size: 25px;
+}
+
+/* Mini Cart  */
+.offcanvas-minicart_wrapper .offcanvas-menu-inner {
+  background: rgba(255,255,255,0.97);
+  position: fixed;
+  top: 0;
+  right: -285px;
+  width: 285px;
+  height: 100%;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  padding: 60px;
+  width: 450px;
+  -webkit-box-shadow: 0px 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0 15px rgba(0,0,0,0.2);
+}
+.offcanvas-minicart_wrapper.open .offcanvas-menu-inner{
+  left: auto;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .btn-close {
+  background: transparent;
+  color: #242424;
+  top: 0;
+  right: 0;
+  left: auto;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 10;
+  font-size: 24px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-heading>h4 {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list {
+  max-height: 310px;
+  position: relative;
+  overflow: auto;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product>a.product-item_remove {
+  position: absolute;
+  right: 15px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_img {
+  border: 1px solid #e5e5e5;
+  -ms-flex-preferred-size: 70px;
+  -webkit-flex-basis: 70px;
+  flex-basis: 70px;
+  max-width: 70px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-item_total {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 25px 0;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_content .product-item_quantity {
+  display: block;
+  padding-top: 10px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_content {
+  -webkit-flex-basis: calc(100% - 70px);
+  -ms-flex-preferred-size: calc(100% - 70px);
+  flex-basis: calc(100% - 70px);
+  max-width: calc(100% - 70px);
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-btn_area {
+  padding-bottom: 15px;
+}
+.global-overlay {
+  background-color: rgba(36,36,36,0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+.global-overlay.overlay-open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
