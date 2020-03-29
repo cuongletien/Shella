@@ -1,35 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Prata|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-@media (min-width: 1200px) {
-  .boxed-layout {
-    display: block;
-    margin: 60px auto;
-    width: 1290px;
-  }
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .boxed-layout {
-    width: 970px;
-    margin: 40px auto;
-  }
-}
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  .boxed-layout {
-    width: 730px;
-    margin: 40px auto;
-  }
-}
-@media (max-width: 767px) {
-  .boxed-layout {
-    width: 480px;
-    margin: 30px auto;
-  }
-}
 /*----------------------------------------*/
 /*  00 - Base - Typography
 /*----------------------------------------*/
@@ -100,9 +69,9 @@ button,
   padding: 0;
   background: transparent;
 }
-.shella-btn{
-  -webkit-box-shadow: 0px 8px 15px rgba(0,0,0,0);
-  box-shadow: 0px 8px 15px rgba(0,0,0,0);
+.shella-btn {
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
   background-color: #242424;
   color: #ffffff !important;
   width: 175px;
@@ -115,7 +84,10 @@ button,
   border-radius: 25px;
   font-size: 16px;
 }
-.shella-btn_fullwidth{
+.position-relative {
+  position: relative;
+}
+.shella-btn_fullwidth {
   width: 100%;
 }
 .shella-btn:hover {
@@ -326,54 +298,63 @@ button,
   color: #e75480;
 }
 .header-right_area.header-right_area-2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.header-right_area.header-right_area-2>ul>li {
-    display: inline-block;
-    margin-right: 20px;
+.header-right_area.header-right_area-2 > ul > li {
+  display: inline-block;
+  margin-right: 20px;
 }
-.header-right_area.header-right_area-2>ul>li.mobile-menu_wrap>a>i {
-    vertical-align: text-bottom;
-    font-size: 23px;
+.header-right_area.header-right_area-2 > ul > li.mobile-menu_wrap > a > i {
+  vertical-align: text-bottom;
+  font-size: 23px;
 }
-.header-right_area.header-right_area-2>ul>li {
-    display: inline-block;
-    margin-right: 15px;
+.header-right_area.header-right_area-2 > ul > li {
+  display: inline-block;
+  margin-right: 15px;
 }
-.header-right_area.header-right_area-2>ul>li.minicart-wrap>a {
-    border: 0;
-    padding: 0;
+.header-right_area.header-right_area-2 > ul > li.minicart-wrap > a {
+  border: 0;
+  padding: 0;
 }
-.header-right_area.header-right_area-2>ul>li.minicart-wrap>a>.minicart-count_area>span.item-count {
-    top: -10px;
-    left: -15px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 9px;
+.header-right_area.header-right_area-2
+  > ul
+  > li.minicart-wrap
+  > a
+  > .minicart-count_area
+  > span.item-count {
+  top: -10px;
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 9px;
 }
-.header-right_area.header-right_area-2>ul>li.minicart-wrap>a>.minicart-count_area {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: 0;
+.header-right_area.header-right_area-2
+  > ul
+  > li.minicart-wrap
+  > a
+  > .minicart-count_area {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
 }
-.header-right_area.header-right_area-2>ul>li:last-child {
-    margin-right: 0;
+.header-right_area.header-right_area-2 > ul > li:last-child {
+  margin-right: 0;
 }
-.header-right_area.header-right_area-2>ul>li>a>i {
-    font-size: 25px;
+.header-right_area.header-right_area-2 > ul > li > a > i {
+  font-size: 25px;
 }
 
 /* Mini Cart  */
 .offcanvas-minicart_wrapper .offcanvas-menu-inner {
-  background: rgba(255,255,255,0.97);
+  background: rgba(255, 255, 255, 0.97);
   position: fixed;
   top: 0;
   right: -285px;
@@ -387,10 +368,10 @@ button,
   transition: all 500ms ease;
   padding: 60px;
   width: 450px;
-  -webkit-box-shadow: 0px 0 15px rgba(0,0,0,0.2);
-  box-shadow: 0px 0 15px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
 }
-.offcanvas-minicart_wrapper.open .offcanvas-menu-inner{
+.offcanvas-minicart_wrapper.open .offcanvas-menu-inner {
   left: auto;
   right: 0;
   visibility: visible;
@@ -411,27 +392,48 @@ button,
   z-index: 10;
   font-size: 24px;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-heading>h4 {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-heading
+  > h4 {
   margin-bottom: 0;
   padding-bottom: 25px;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list {
   max-height: 310px;
   position: relative;
   overflow: auto;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list
+  > li.minicart-product {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 30px;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product>a.product-item_remove {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list
+  > li.minicart-product
+  > a.product-item_remove {
   position: absolute;
   right: 15px;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_img {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list
+  > li.minicart-product
+  .product-item_img {
   border: 1px solid #e5e5e5;
   -ms-flex-preferred-size: 70px;
   -webkit-flex-basis: 70px;
@@ -456,11 +458,22 @@ button,
   align-items: center;
   padding: 25px 0;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_content .product-item_quantity {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list
+  > li.minicart-product
+  .product-item_content
+  .product-item_quantity {
   display: block;
   padding-top: 10px;
 }
-.offcanvas-minicart_wrapper .offcanvas-menu-inner .minicart-content .minicart-list>li.minicart-product .product-item_content {
+.offcanvas-minicart_wrapper
+  .offcanvas-menu-inner
+  .minicart-content
+  .minicart-list
+  > li.minicart-product
+  .product-item_content {
   -webkit-flex-basis: calc(100% - 70px);
   -ms-flex-preferred-size: calc(100% - 70px);
   flex-basis: calc(100% - 70px);
@@ -472,7 +485,7 @@ button,
   padding-bottom: 15px;
 }
 .global-overlay {
-  background-color: rgba(36,36,36,0.9);
+  background-color: rgba(36, 36, 36, 0.9);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -486,6 +499,114 @@ button,
   visibility: visible;
   opacity: 1;
   -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/* Header Menu */
+
+.main-nav > ul > li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.main-nav > ul > li > a {
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: block;
+}
+.main-nav > ul > li > a > i {
+  margin-left: 5px;
+}
+.main-nav > ul > li.megamenu-holder .shella-megamenu {
+  -webkit-box-shadow: 0 0 7px 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 7px 0.5px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.97);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: auto;
+  top: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 999;
+}
+.main-nav > ul > li.megamenu-holder:hover .shella-megamenu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.main-nav > ul > li .shella-dropdown {
+  -webkit-box-shadow: 0 0 7px 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 7px 0.5px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.97);
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  padding: 20px 0 24px;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  position: absolute;
+  width: 230px;
+  z-index: 9;
+}
+.main-nav > ul > li:hover .shella-dropdown {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.main-nav > ul > li.megamenu-holder > ul > li {
+  width: 33.33%;
+}
+.main-nav > ul > li.megamenu-holder > ul > li > span.megamenu-title {
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.main-nav > ul > li.megamenu-holder > ul > li > span.megamenu-title:before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #e75480;
+}
+.main-nav > ul > li.megamenu-holder > ul > li > ul > li {
+  padding-left: 0;
+}
+.main-nav > ul > li.megamenu-holder > ul > li > ul > li > a {
+  display: block;
+  line-height: 35px;
+  font-size: 16px;
+}
+.main-nav > ul > li .shella-dropdown > li > a {
+  padding: 10px 20px;
+  display: block;
 }
