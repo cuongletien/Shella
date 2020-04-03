@@ -69,6 +69,31 @@ button,
   padding: 0;
   background: transparent;
 }
+.hide {
+  max-height: 0px;
+  transition: max-height 0.5s;
+}
+.toggle-hide {
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: max-height 0.5s;
+}
+.btn-close {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background: #242424;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 10;
+  font-size: 24px;
+}
+.btn-close.white-close_btn {
+  color: #ffffff;
+}
 .shella-btn {
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
@@ -353,7 +378,8 @@ button,
 }
 
 /* Mini Cart  */
-.offcanvas-minicart_wrapper .offcanvas-menu-inner {
+.offcanvas-minicart_wrapper .offcanvas-menu-inner,
+.mobile-menu_wrapper .offcanvas-menu-inner {
   background: rgba(255, 255, 255, 0.97);
   position: fixed;
   top: 0;
@@ -366,12 +392,15 @@ button,
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-  padding: 60px;
+}
+.offcanvas-minicart_wrapper .offcanvas-menu-inner {
   width: 450px;
+  padding: 60px;
   -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
 }
-.offcanvas-minicart_wrapper.open .offcanvas-menu-inner {
+.offcanvas-minicart_wrapper.open .offcanvas-menu-inner,
+.mobile-menu_wrapper.open .offcanvas-menu-inner {
   left: auto;
   right: 0;
   visibility: visible;
@@ -609,4 +638,44 @@ button,
 .main-nav > ul > li .shella-dropdown > li > a {
   padding: 10px 20px;
   display: block;
+}
+.mobile-menu_wrapper .offcanvas-menu-inner .offcanvas-inner_logo {
+  padding: 30px 0;
+  text-align: center;
+}
+.offcanvas-navigation .mobile-menu li {
+  position: relative;
+}
+.offcanvas-navigation .mobile-menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0;
+}
+.offcanvas-navigation .mobile-menu li > .menu-expand {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 50px;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 4px;
+  font-size: 20px;
+}
+.offcanvas-navigation .mobile-menu li .sub-menu {
+  padding-left: 10px;
+  overflow-y: auto;
+}
+.offcanvas-navigation .mobile-menu li .sub-menu li a {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+.offcanvas-navigation .mobile-menu > li {
+  height: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.offcanvas-navigation .mobile-menu li.active > .menu-expand i:before {
+  content: "\f462";
 }
