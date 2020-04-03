@@ -46,7 +46,7 @@ function checkClass(item, className) {
     if (x.classList.contains(className)) return x;
   }
 }
-
+/*Add Toggle Button With Off Canvas Sub Menu*/
 offcanvasNavSubMenu.forEach(item => {
   let parent = item.parentElement;
   let newItem = document.createElement("span");
@@ -55,7 +55,7 @@ offcanvasNavSubMenu.forEach(item => {
   parent.appendChild(newItem);
   item.classList.add("hide");
 });
-
+/*Category Sub Menu Toggle*/
 offcanvasNav.forEach(item => {
   item.addEventListener("click", e => {
     let itemTarget = e.target;
