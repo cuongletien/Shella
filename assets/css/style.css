@@ -832,3 +832,35 @@ button,
   bottom: 50%;
   margin-bottom: 30px;
 }
+
+/* Service */
+
+.banner-area {
+  padding: 90px 0 0;
+}
+.service-area .service-nav {
+  padding: 90px 0 0;
+}
+.service-area .service-nav .service-item {
+  position: relative;
+  text-align: center;
+}
+.service-area .service-nav .service-item:before {
+  background-color: #e5e5e5;
+  content: "";
+  height: 32px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.service-area .service-nav .service-item .content>h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.service-area .service-nav .service-item .content>p {
+  margin-bottom: 0;
+}
