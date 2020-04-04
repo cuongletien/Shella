@@ -1,37 +1,43 @@
 @media (min-width: 1200px) {
-    .container {
-      max-width: 1200px;
-    }
+  .container {
+    max-width: 1200px;
   }
-  @media (min-width: 1200px) {
-    .boxed-layout {
-      display: block;
-      margin: 60px auto;
-      width: 1290px;
-    }
+}
+@media (min-width: 1200px) {
+  .boxed-layout {
+    display: block;
+    margin: 60px auto;
+    width: 1290px;
   }
-  
-  @media only screen and (max-width: 1199px) and (min-width: 992px) {
-    .boxed-layout {
-      width: 970px;
-      margin: 40px auto;
-    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .boxed-layout {
+    width: 970px;
+    margin: 40px auto;
   }
-  @media only screen and (max-width: 991px) and (min-width: 768px) {
-    .boxed-layout {
-      width: 730px;
-      margin: 40px auto;
-    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .boxed-layout {
+    width: 730px;
+    margin: 40px auto;
   }
-  @media (max-width: 767px) {
-    .boxed-layout {
-      max-width: 480px;
-      margin: 30px auto;
-    }
+}
+@media (max-width: 767px) {
+  .boxed-layout {
+    max-width: 480px;
+    margin: 30px auto;
   }
-  @media (max-width: 479px) {
-    .offcanvas-minicart_wrapper .offcanvas-menu-inner {
-      width: 100%;
-      padding: 60px 15px;
-    }
+}
+@media (max-width: 479px) {
+  .offcanvas-minicart_wrapper .offcanvas-menu-inner {
+    width: 100%;
+    padding: 60px 15px;
   }
+}
+@media (max-width: 768px) {
+  .slider-shella .slick-arrow {
+    opacity: 0;
+    overflow: hidden;
+  }
+}

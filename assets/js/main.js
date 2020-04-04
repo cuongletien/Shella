@@ -65,3 +65,13 @@ offcanvasNav.forEach(item => {
     getSubMenu.classList.toggle("toggle-hide");
   });
 });
+
+$('.home-slider').slick({
+  autoplay: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  dotsClass: 'slick-dots',
+  fade: true,
+});
