@@ -1119,3 +1119,23 @@ button,
   > i {
   font-size: 18px;
 }
+.product-tab_area {
+  padding: 95px 0 0;
+} 
+.product-tab_area .section-title .product-tab {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+  padding-left: 25px;
+  position: relative;
+}
+.product-tab_area .section-title .product-tab>ul.product-menu>li {
+  margin-right: 15px;
+}
